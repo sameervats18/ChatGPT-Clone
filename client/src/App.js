@@ -17,7 +17,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Navbar />
-        <Toaster />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/register" element={<Register />} />
