@@ -11,9 +11,12 @@ const Register = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
+
+    // register ctrl
+    const handleSubmit = async()
     return (
         <Box width={isNotMobile ? '40%' : '80%'} p={'2rem'} m={'2rem auto'} borderRadius={5} sx={{ boxShadow: 5 }} backgroundColor={theme.palette.background.alt}>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <Typography variant="h3">Sign Up</Typography>
                 <TextField label="username" required margin="normal" fullWidth value={username} onChange={(e) => {
                     setUsername(e.target.value);
